@@ -1,4 +1,3 @@
-import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {useParams} from "react-router-dom";
 import {useEffect} from "react";
@@ -7,14 +6,15 @@ import {Box, Container, Typography} from "@mui/material";
 import {imageUrl} from "../../api/api";
 
 function Movie() {
+    const dispatch = useDispatch()
+    const {id} = useParams()
 
     useEffect(() => {
         dispatch(getMovieAsync(id))
-    }, [])
+    }, [dispatch, id])
 
     const {selectedMovie} = useSelector(state => state.movies)
-    const dispatch = useDispatch()
-    const {id} = useParams()
+
 
     const renderGenres = () => {
         if (selectedMovie.genres) {

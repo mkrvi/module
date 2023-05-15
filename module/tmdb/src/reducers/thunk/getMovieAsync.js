@@ -1,6 +1,5 @@
 import {getMovieById} from "../../api/api";
 import {getMovie} from "../moviesReducer";
-import {updatePagination} from "../pageReducer";
 
 function getMovieAsync(movie_id) {
     return (dispatch) => {

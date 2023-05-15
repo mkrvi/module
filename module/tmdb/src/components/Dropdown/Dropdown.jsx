@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {Box, InputLabel, MenuItem, Select} from "@mui/material";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
@@ -19,7 +19,7 @@ function Dropdown(){
     useEffect(() => {
         dispatch(getGenresAsync())
         dispatch(getLanguagesThunk())
-    }, [])
+    }, [dispatch])
 
     const {languages} = useSelector((state) => state.languages)
     const {selectedLanguage} = useSelector(state => state.languages)

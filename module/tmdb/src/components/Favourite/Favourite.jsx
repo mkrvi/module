@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography} from "@mui/material";
 import {imageUrl} from "../../api/api";
 import {useSelector} from "react-redux";

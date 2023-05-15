@@ -1,4 +1,4 @@
-import {discoverMovie, getPopularList} from "../../api/api";
+import {discoverMovie} from "../../api/api";
 import {getMovies} from "../moviesReducer";
 import {updatePagination} from "../pageReducer";
 

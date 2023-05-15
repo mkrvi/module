@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import {Card, CardActionArea, CardContent, CardMedia, Grid, Typography} from "@mui/material";
-import {useEffect,} from "react";
+import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {imageUrl} from "../../api/api";
 import getMoviesThunk from "../../reducers/thunk/getMoviesAsync";
@@ -28,7 +28,7 @@ function CardList(){
         if (selectedLanguage.length === 0 && genresId.length === 0 && searchValue.length === 0 && pagination.page === 1) {
             dispatch(getMoviesThunk(page));
         }
-    },[])
+    },[dispatch, selectedLanguage.length, selectedLanguage.length, searchValue.length, pagination.page])
 
     function onClickButton(movie) {
         favorite.push(movie)

@@ -29,7 +29,7 @@ const RegisterForm = () => {
     }
 
     return (
-        <React.Fragment sx={{backgroundColor: '#1f2123'}}>
+        <React.Fragment>
             <Box sx={{width: '500px', margin: 'auto'}}>
             <h2 style={{textAlign:'center'}}>Register Form</h2>
             <form onSubmit={handleSubmit(onSubmit)}>

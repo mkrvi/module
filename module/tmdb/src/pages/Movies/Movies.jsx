@@ -1,4 +1,3 @@
-import React from 'react';
 import CardList from "../../components/CardList/CardList";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import MoviePagination from "../../components/Pagination/Pagination";

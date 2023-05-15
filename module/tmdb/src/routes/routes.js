@@ -6,6 +6,7 @@ import Register from "../components/Form/Register";
 import Movies from "../pages/Movies/Movies";
 import Movie from "../pages/Movie/Movie";
 import Favorite from "../components/Favourite/Favourite";
+import Error from "../components/Error/Error";
 
 export default function ProtectedRoute({ children }) {
     if (!localStorage.getItem('token')) {
@@ -43,7 +44,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '*',
-                element: <h1>Not found</h1>,
+                element: <Error/>,
             },
 
         ],
