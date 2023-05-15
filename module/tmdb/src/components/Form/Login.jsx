@@ -4,7 +4,7 @@ import FormInput from './UI/Input';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import {loginSchema} from "../../data/schema";
-import {Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {Box, Paper} from "@mui/material";
 
 

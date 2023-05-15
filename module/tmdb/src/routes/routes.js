@@ -3,7 +3,6 @@ import {createBrowserRouter, Navigate} from 'react-router-dom';
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Login from "../components/Form/Login";
 import Register from "../components/Form/Register";
-import CardList from "../components/CardList/CardList";
 import Movies from "../pages/Movies/Movies";
 import Movie from "../pages/Movie/Movie";
 import Favorite from "../components/Favourite/Favourite";
@@ -57,8 +56,8 @@ export const router = createBrowserRouter([
         path: '/register',
         element: <Register/>,
     },
-    {
-        path: '*',
-        element: <Navigate to="dashboard" />,
-    },
+    // {
+    //     path: '*',
+    //     element: <Navigate to="dashboard" />,
+    // },
 ])

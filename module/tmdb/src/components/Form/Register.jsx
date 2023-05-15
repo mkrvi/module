@@ -1,5 +1,4 @@
-import React, { useState, createRef } from 'react';
-import TextField from '@mui/material/TextField';
+import React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import FormLabel from '@mui/material/FormLabel';
@@ -10,7 +9,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import FormInput from './UI/Input';
 import {registerSchema} from "../../data/schema";
-import {Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {Box} from "@mui/material";
 
 const RegisterForm = () => {

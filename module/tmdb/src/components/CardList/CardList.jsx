@@ -1,5 +1,6 @@
+import React from 'react';
 import {Card, CardActionArea, CardContent, CardMedia, Grid, Typography} from "@mui/material";
-import {useEffect, useState} from "react";
+import {useEffect,} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {imageUrl} from "../../api/api";
 import getMoviesThunk from "../../reducers/thunk/getMoviesAsync";

@@ -1,6 +1,6 @@
+import React from 'react';
 import {Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography} from "@mui/material";
 import {imageUrl} from "../../api/api";
-import Button from "@mui/material/Button";
 import {useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 
